@@ -1,4 +1,5 @@
 {
+  "homepage":"https://github.com/Lyanna666/portfolio",
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -30,6 +31,8 @@
     "workbox-strategies": "^5.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "serve": "serve -s build",
@@ -53,5 +56,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
